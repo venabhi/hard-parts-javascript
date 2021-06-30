@@ -45,3 +45,22 @@ function squareNum (num) {
 const output = squareNum(10);
 const output = squareNum(9);
 
+# pair programming
+
+it will help to reduce the complex code and a couple of dev will work to improve the efficient of code.
+
+#  higher order function & paramaterizing functions
+we have a function copyarrayandmultiplyby2
+
+function copyArrayAnsMultiplyBy2 (array) {
+   <!--  in the array parameter we are giving newarray arguments1,2,3 -->
+   let output = []    here output is an empty array because once the exe all the op values will store in the op []
+   for (let i=0; i<array.length; i++) {
+           output.push(array[i] *2);           thus is the code we are run and also push the output the empty out [] using output.[push] 
+   }  we are giv expression and .len is leng of array like how many argument in array here, array[i] so, it will start with first arg 1
+   return output;
+   <!--  so, finally we are returning the output array to the global exc which is result -->
+} 
+const newarray = [1,2,3];
+let result = copyarrayansmultiplyby2(newarray)
+
