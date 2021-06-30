@@ -67,7 +67,7 @@ let result = copyarrayansmultiplyby2(newarray)
 # generalizing functions
 we shd reuse the function times and times only adding parameter
 
-function copyarraymanipulate (array, instructions) {
+function copyarraymanipulate (array, instructions) {       here, instructions = baby function = complete def of function 
    let output = [];
    for (let i=0; array.length<0; i++) {
      output.push(instructions( array[i]);   here combine parameter in struction to normal array index 
@@ -76,9 +76,48 @@ function copyarraymanipulate (array, instructions) {
    return output;
 }
 
-function divideby2 (num) {
-   return num/2;
+function divideby2 (input) {    here, input is array[index]s
+       return input / 2;
+}
+<!--  finally it will push all the output to tthe label resul of copyarray -->
+let result = copyarraymanipulate([1,2,3], dividby2)
+
+finally we done with principle, execution context, high-order functions, callback , baby functions...etc
+
+
+<!--  example calling a fun with arg -->
+
+function instructiongen () {
+   function multiby2 (num) {
+      return num*2;
+   }
+   return multiby2;
 }
 
-let result = copyarraymanipulate([1,2,3], dividby2)
+let genfun = instructiongen();
+let result = genfun(3)
+
+<!--  closure without retun the dec fun inside  because we are declaring counter in global so we will return the dec fun outside  -->
+function outer () {
+   let counter = 0;
+   function incrementc () {
+      counter ++;
+   }
+   return incrementc;
+}
+let newfun = outer ()  or newfun = incrementc
+
+<!--  what happen if we exc newfun again -->
+newfun();    it will look on to the global 
+
+using counter/closure it will store the backpack information it will take the old value and increase the value
+
+function  outer () {
+   let counter = o;
+   function inc () {
+      coonter++;
+   }
+   return inc;
+}
+var newfun = outer()
 
