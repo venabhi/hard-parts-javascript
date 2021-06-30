@@ -64,3 +64,21 @@ function copyArrayAnsMultiplyBy2 (array) {
 const newarray = [1,2,3];
 let result = copyarrayansmultiplyby2(newarray)
 
+# generalizing functions
+we shd reuse the function times and times only adding parameter
+
+function copyarraymanipulate (array, instructions) {
+   let output = [];
+   for (let i=0; array.length<0; i++) {
+     output.push(instructions( array[i]);   here combine parameter in struction to normal array index 
+
+   }
+   return output;
+}
+
+function divideby2 (num) {
+   return num/2;
+}
+
+let result = copyarraymanipulate([1,2,3], dividby2)
+
