@@ -230,3 +230,24 @@ user2.score = 5;
 user2.increment = function () {
    user2.score++;
 };
+
+<!--  how to resuse the object using generalise function -->
+create the object and use many times we can by using generalise function
+generate a function with a function then we can use many times.
+
+function createuser (name, score ) {
+   const newuser = () ;
+   newuser.name = name;
+   newuser.score = score;
+   newuser.increment = function () {
+      newuser.score++
+   }; 
+  return newuser;
+}
+const user1 = createuser('abhi', 5);
+const user2 = createuser('ram', 5);
+user1.increment()
+user2.increatement();
+
+
+
