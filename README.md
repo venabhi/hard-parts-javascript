@@ -1,6 +1,4 @@
 # HARD-PARTS-JAVASCRIPT
-<<<<<<< HEAD
-=======
 
 WHAT HAPPENS WHEN JAVASCRIPT EXECUTES MY CODE?
 
@@ -122,7 +120,6 @@ function  outer () {
    return inc;
 }
 var newfun = outer()
->>>>>>> 9d48a2e548a9ff7992c45ae34a34d03465fdbcb5
 
 WHAT HAPPENS WHEN JAVASCRIPT EXECUTES MY CODE?
 
@@ -144,3 +141,11 @@ network req = label is fetch/xhe
 consoloe = console is the label 
 
 these all the browser features js is contacting wit the browser
+
+# setTimeOut
+
+function printhello () {
+   console.log('hello');
+}
+detTimeout(printhello, 1000);   after 1000 msec web browser will call the func printhello and print result on web
+console.log('me first');
