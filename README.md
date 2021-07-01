@@ -233,7 +233,7 @@ user2.increment = function () {
 
 <!--  how to resuse the object using generalise function -->
 create the object and use many times we can by using generalise function
-generate a function with a function then we can use many times.
+generate a object with a function then we can use many times.
 
 function createuser (name, score ) {
    const newuser = () ;
@@ -249,5 +249,22 @@ const user2 = createuser('ram', 5);
 user1.increment()
 user2.increatement();
 
+# prototype chain
+prototype chin = object.create
+this type will help to store all the fun in a function inside 
+
+function createuser (name, score) {
+   const newuser = object.create(userinfostore);
+   newuser.name = 'abhi';
+   newuser.score = 5;
+};
+const userinfo = () {
+   increatment = function () {
+      this.score++;
+   };
+   login = function () {
+      console.log("logged on");
+   }
+}
 
 
