@@ -147,5 +147,27 @@ these all the browser features js is contacting wit the browser
 function printhello () {
    console.log('hello');
 }
-detTimeout(printhello, 1000);   after 1000 msec web browser will call the func printhello and print result on web
+setTimeout(printhello, 1000);   after 1000 msec web browser will call the func printhello and print result on web
 console.log('me first');
+
+function printhello () {
+   console.log('hello');
+}
+
+setTimeout (printhello, 0);
+
+blockFor1scc ()
+console.log('me first')
+<!--  event loop will check any callback ques fun are waiting and it will call the function this is async js -->\
+
+# promisess
+promises are like js object it work with fetch 
+fetch will be used to grab the data if u fetch it will divide in to 2 prongs 
+1 prong will work with web backend it will contact with n/w collect tghe data send to java script 
+then, another prong will the data from web it will store on the promises object in js. assig to the var.
+
+function display (data) {
+   console.log(data)
+}
+const tdata = fetch('url);
+tdata.thrn(display);
