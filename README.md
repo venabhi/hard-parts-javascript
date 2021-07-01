@@ -164,10 +164,36 @@ console.log('me first')
 promises are like js object it work with fetch 
 fetch will be used to grab the data if u fetch it will divide in to 2 prongs 
 1 prong will work with web backend it will contact with n/w collect tghe data send to java script 
-then, another prong will the data from web it will store on the promises object in js. assig to the var.
-
+then, another prong will the data from web it will store on the promises object  value proprty in js. assig to the var.
+promise object has vale and aray properties
 function display (data) {
    console.log(data)
 }
 const tdata = fetch('url);
-tdata.thrn(display);
+tdata.then(display);
+
+promise = value and big array 
+once data sent to promise and stored in values it will trigger the array to run a function 
+
+const tdata - fetch(url)
+tdata.then (display)
+
+<!--  promises async and eventloop  -->
+function dispay(data) {
+   console.log(data)
+}
+function printhello () {
+   console.log('hello)
+}
+function block () {
+
+}
+
+setTimeout(printhello, 0);
+
+const newdata = fetch ('url')
+newdata.then(display)
+
+newdat.catch() error handeling
+blockFor() 
+console.log('mefirst');
