@@ -196,4 +196,37 @@ newdata.then(display)
 
 newdat.catch() error handeling
 blockFor() 
-console.log('mefirst');
+
+# oop
+declaring an obj and binding properties and function
+
+const user1 = {
+   name = "abhi";
+   score = 7;
+   increment = function () {
+      score++;
+   }
+};l
+user1.name();
+user1.increment();
+
+
+declare a empty function and assigning a parameters
+
+const user2 = ();
+
+user2.name = "abhi";
+user2.score = 5;
+user2.increment = function () {
+   user2.score++;
+};
+
+create user3 using object.create
+
+const user3 = object.create(null);
+
+user2.name = "abhi";
+user2.score = 5;
+user2.increment = function () {
+   user2.score++;
+};
